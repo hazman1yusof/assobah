@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-wrap><h1>{{selectedItem.huruf}}</h1></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="itemTapped($event)">
+        <ion-icon name="clipboard"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+    <ion-card-content>
+
+        <h2 class="biru">
+          Sebutan/Bacaan
+        </h2><hr>
+
+        <ion-row>
+          <ion-col text-left><h4 class="biru">Waqoaf</h4></ion-col>
+          <ion-col text-right [innerHTML]="Waqoaf"></ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col text-left><h4 class="biru">Baris Atas Fathah</h4></ion-col>
+          <ion-col text-right [innerHTML]="Fathah"></ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col text-left><h4 class="biru">Baris Bawah Kasroah</h4></ion-col>
+          <ion-col text-right [innerHTML]="Kasroah"></ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col text-left><h4 class="biru">Baris Depan Dhoammah</h4></ion-col>
+          <ion-col text-right [innerHTML]="Dhoammah"></ion-col>
+        </ion-row>
+
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content >
+        <h2 class="biru">
+          Sebutan/Bacaan
+        </h2><hr>
+
+        <ion-row>
+          <h3><p [innerHTML]="kaedah_sebutan"></p></h3>
+        </ion-row>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="obj.istilak || obj.xdemalay">
+    <ion-card-content>
+        <h2 class="biru">
+          Nota
+        </h2><hr>
+      <ion-row>
+        <ion-row *ngIf=obj.istilak text-wrap no-padding no-margin><ion-icon name="warning" color='danger' class='small'></ion-icon> Huruf ini adalah huruf isti'lak (ada 7 keseluruhanya)</ion-row>
+        <ion-row *ngIf=obj.xdemalay text-wrap no-padding no-margin><ion-icon name="medical" class='orange'></ion-icon> Huruf ini tiada dalam tulisan jawi/melayu (ada 13 keseluruhanya)</ion-row>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

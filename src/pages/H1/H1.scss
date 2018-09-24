@@ -1,0 +1,30 @@
+page-H1 {
+	p{
+		color: #999!important;
+	}
+	.toolbar-title {
+	   text-overflow: unset;
+	   white-space: unset;
+	}
+	.biru{
+		color: rgb(66, 127, 235) !important;
+	}salah{
+		color: #dc3545!important;
+	}
+	.betul{
+		color: #28a745!important;
+	}
+	.hnobreak h1{
+		display:inline !important;
+	}
+	.webkitlarge{
+		font-family: scheherazaderegular !important;
+		font-size: -webkit-xxx-large !important;
+		line-height: 1;
+	}
+	h1{
+		font-family: scheherazaderegular !important;
+		font-size: 3rem !important;
+	}
+
+}

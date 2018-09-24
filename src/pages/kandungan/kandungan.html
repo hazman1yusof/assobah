@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+
+    <ion-title>Kandungan</ion-title>
+    <ion-searchbar placeholder="Search e.g Mad Asli.." [(ngModel)]="myInput" (ionInput)="onInput($event)" ></ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding no-margin>
+  <ion-list>
+      <div *ngFor="let p of pages_sea">
+        <ion-list-header no-margin>
+          {{p.main}}
+        </ion-list-header>
+        <button ion-item text-wrap *ngFor="let child of p.child" (click)="openPage(child)">
+          <span [innerHTML]="child.title"></span>
+          <span *ngIf="child.c_in?.length > 0">
+            <br><i class="biru">inside keyword</i>
+            <ul *ngFor="let _in of child.c_in">
+              <li [innerHTML]="_in"></li>
+            </ul>
+          </span>
+
+        <!-- <button ion-item text-wrap *ngFor="let child of p.child" (click)="openPage(child)">{{child.title}} -->
+        </button>
+      </div>
+    </ion-list>
+</ion-content>

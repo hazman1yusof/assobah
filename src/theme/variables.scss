@@ -86,3 +86,14 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+$scheherazade-font-path: $font-path !default;
+
+@font-face {
+    font-family: 'scheherazaderegular';
+    src: url('#{$scheherazade-font-path}/Scheherazade-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

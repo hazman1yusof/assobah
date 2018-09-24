@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button menuToggle *ngIf="!item">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title text-wrap >Nota Tambahan</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-textarea placeholder="Enter a description" autosize rows="20" [(ngModel)]="note"></ion-textarea>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button float-right (click)="simpanNota()">
+      Save
+    </button>
+  </ion-toolbar>
+</ion-footer>

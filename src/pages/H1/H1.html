@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+
+  <ion-title text-wrap >H1. Tanda Bacaan dan Simbol Utama</ion-title>
+  <ion-buttons end>
+    <button ion-button icon-only (click)="itemTapped($event)">
+      <ion-icon name="clipboard"></ion-icon>
+    </button>
+  </ion-buttons>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-content >
+
+        <h1>ه</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Huruf yang memiliki tanda ini adalah huruf tambahan. Tidak dibaca sebagai huruf mad ketika menyambung bacaan ataupun berhenti</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>مِاْئَةَ / أُوْلُواْ</h1></ion-col>
+          <ion-col text-right col-12><h1>سَأُوْرِيكُم</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>ٱ</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Hamzah bersambung (wasoal). Tidak dibaca apabila pembacaan disambung dengan huruf sebelumnya</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>ٱسْتَغْفِرُوا۟ رَبَّكُمْ</h1></ion-col>
+          <ion-col text-right col-12><h1>وَٱلْحَمْدُ لِلَّـهِ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>اْ</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Tidak dibaca sebagai huruf mad jika disambung dengan huruf mad jika disambung dengan huruf berikutnya. Dan dibaca sebagai huruf mad jika berhenti padanya</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>لَّـٰكِنَّا۠ هُوَ ٱللَّـهُ رَبِّى</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>ْ</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Huruf dengan tanda ini mestilah dibaca izhar dengan cara menyatakan makhraj dan sifatnya</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>يُوسُفُ أَعْرِضْ عَنْ هَـٰذَا</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>م</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Menunjukkan hukum iqlab</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>وَمَنۢ بَلَغَ</h1></ion-col>
+          <ion-col text-right col-12><h1>وَٱللَّـهُ عَلِيمٌۢ بِٱلظَّـٰلِمِينَ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>ا</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Wajib dibaca dengan kadar 2 haroakat</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ</h1></ion-col>
+          <ion-col text-right col-12><h1>مِّنْ أَهْلِ ٱلْكِتَـٰبِ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>و</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Wajib dibaca panjang dengan kadar dua haroakat</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>دَاوُۥدُ </h1></ion-col>
+          <ion-col text-right col-12><h1>وَأُمُّهُۥ صِدِّيقَةٌ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>ـۧ</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Ganti daripada huruf ي .Perhatikan barisnya. Jika tanda ini tidak berbaris maka wajib dibaca 2 haroakat</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>وَٱلنَّبِيِّـۧنَ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h1>ن</h1>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-center><h3><p>Sukunkan ia dan baca dengan cara ikhfak</p></h3></ion-col>
+        </ion-row>
+        <hr>
+        <h3 class="biru">Contoh-contoh</h3>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-right col-12><h1>وَكَذَٰلِكَ نُـۨجِى ٱلْمُؤْمِنِينَ</h1></ion-col>
+        </ion-row>
+        <br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

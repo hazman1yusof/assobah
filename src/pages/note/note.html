@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button menuToggle *ngIf="!item">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title text-wrap >Nota</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2 class="biru">Nota</h2>
+  <div *ngFor="let n of item">
+    
+    <p  [innerHTML]="n"></p>
+    <hr>
+    
+  </div>
+
+  <ion-row>
+    <hr>
+    <ion-col col-12>
+      <p [innerHTML]="note_tam"></p>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button float-right (click)="add_note_f()" >
+      Add Note
+    </button>
+  </ion-toolbar>
+</ion-footer>
+

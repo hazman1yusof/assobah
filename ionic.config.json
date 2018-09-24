@@ -1,5 +1,7 @@
 {
   "name": "assobah",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

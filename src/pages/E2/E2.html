@@ -1,0 +1,317 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+
+  <ion-title text-wrap >E2. Mad Far'i</ion-title>
+    
+    <ion-buttons end>
+      <button ion-button icon-only (click)="itemTapped($event)">
+        <ion-icon name="clipboard"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-content >
+
+        <h2>1. Mad Muttasil (Wajib)</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Sesudah huruf mad terdapat (ء) dalam 1 perkataan</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ا</h1></ion-col>
+          <ion-col text-left><h1>يَشَآء</h1></ion-col>
+          <ion-col text-right><h3>Wasoal<br>4,5 harakat</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">و</h1></ion-col>
+          <ion-col text-left><h1>باِلسُّوءِ</h1></ion-col>
+          <ion-col text-right><h3>Waqoaf<br>4,5,6 harakat</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ي</h1></ion-col>
+          <ion-col text-left><h1>حَتَّىٰ تَفِىٓءَ</h1></ion-col>
+        </ion-row>
+        <br>
+
+        <h2>2. Mad Munfasil (Jaaiz)</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Sesudah huruf mad terdapat (ء) dalam 2 perkataan</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ا</h1></ion-col>
+          <ion-col text-left><h1>أَم مَّنۡ خَلَقۡنَآ‌ۚ</h1></ion-col>
+          <ion-col text-right><h3>Wasoal<br>4,5 harakat</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">و</h1></ion-col>
+          <ion-col text-left><h1>وَأَنَابُوٓاْ إِلَى ٱللَّهِ</h1></ion-col>
+          <ion-col text-right><h3>Waqoaf<br>2 harakat</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ي</h1></ion-col>
+          <ion-col text-left><h1>يَـٰبَنِىٓ ءَادَمَ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>3. Mad Arid Liisukun</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Menghentikan bacaan pada akhir kalimah yang sebelumnya terhadap huruf mad</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ا</h1></ion-col>
+          <ion-col text-left><h1>لِلنَّاسِ</h1></ion-col>
+          <ion-col text-right><h3>2,4,6</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">و</h1></ion-col>
+          <ion-col text-left><h1>يُؤْمِنُونَ</h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-1><h1 class="betul">ي</h1></ion-col>
+          <ion-col text-left><h1>نَسْتَعِينُ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>4. Mad Badal</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Asalnya ada dua huruf hamzah. Hamzah pertama berbaris, hamzah kedua sukun. Hamzah kedua ditukar kepada huruf mad menurut baris hamzah pertama</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>ءَ امَنَ</h1></ion-col>
+          <ion-col text-right><h3>2</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>إِيمَانً</h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>أُوتُوا</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>5. Mad Lazim (Kalimi)</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Kalimi Muthaqqoal - Selepas tanda mad ada huruf bersabdu<br> Kalimi Mukhoaffaf - Selepas tanda mad ada huruf sukun</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Kalimi Muthaqqoal</h3></ion-col>
+          <ion-col text-left col-11><h1>ٱلْحَآقَّةُ / ٱلدَّوَآبِّ / تُشَـٰٓقُّونَ </h1></ion-col>
+          <ion-col text-right col-1><h3>6</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1></h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Kalimi Mukhoaffaf</h3></ion-col>
+          <ion-col text-left col-12><h1>ءَ آلْئنَ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>6. Mad Lazim (Harfi)</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Harfi Muthaqqoal - Berlaku idhgam pada huruf lam dan mim<br> Harfi Mukhoffaf - Tidak berlaku bacaan idgham pada huruf</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Harfi Muthaqqoal</h3></ion-col>
+          <ion-col text-left col-11><h1>طسٓمٓ / الٓمٓ / الٓمٓصٓ </h1></ion-col>
+          <ion-col text-right col-1><h3>6</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Harfi Mukhoffaf</h3></ion-col>
+          <ion-col text-left col-12><h1>يسٓ / الٓر / قٓ </h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>7. Mad Lin</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Huruf sebelum waw dan ya sukun berbaris atas. Jika berhenti maka huruf terakhir disukunkan</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>رَجْمًۢا بِٱلْغَيْبِ</h1></ion-col>
+          <ion-col text-right><h3>2,4,6</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>وَذَرُوا۟ ٱلْبَيْعَ</h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>أَوْ بَعْضَ يَوْمٍ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2 class="hnobreak">8. Mad Ssilah <h1><span class='d'>* </span></h1></h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Mad Ssilah Qoasiroah - Tiada huruf hamzah selepas ha dhoamid <br> Mad Ssilah Toawilah - Ada huruf hamzah selepas ha dhoamir</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Mad Ssilah Qoasiroah</h3></ion-col>
+          <ion-col text-left col-11><h1>إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا</h1></ion-col>
+          <ion-col text-right col-1><h3>2</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-12><h3 class="betul">Mad Ssilah Toawilah</h3></ion-col>
+          <ion-col text-left col-10><h1>وَكَفَىٰ بِهِۦٓ إِثْمًا مُّبِينًا</h1></ion-col>
+          <ion-col text-right col-2><h3>4,5</h3></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>9. Mad 'Iwad</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Tanwin baris dua atas terletak di huruf akhir kalimah. Jika berhenti dibaca baris satu atas</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-10><h1>شَيْئًا <span class="orange">dibaca</span> شَيْئَا</h1></ion-col>
+          <ion-col text-right><h3>2</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-10><h1>حَكِيْمًا <span class="orange">dibaca</span> حَكِيْمَا</h1></ion-col>
+          <ion-col text-right><h3></h3></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>10. Mad Farq</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Mad pada huruf hamzah istifham di awal kalimah ketika bertemu dengan hamzah wassoal</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>ءَآٱللهٌ</h1></ion-col>
+          <ion-col text-right><h3>6</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>ءَآلذَّكَرَيْنِ</h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>ءَآلْئنَ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>11. Mad Tamkin</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Mad pada huruf ya' bersabdu serta bari bawah yang diikuti dengan huruf ya' sebagai huruf mad</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>حُيِّيتُم</h1></ion-col>
+          <ion-col text-right><h3>2</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>وَٱلنَّبِيِّـۧنَ </h1></ion-col>
+          <ion-col text-right><h3></h3></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>12. Mad Ta'zhim</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Mad pada perkataan لَآ bererti "tidak" ketika bertemu dengan إِلَهَ yang terdapat pada kalimah tauhid</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-10><h1>ٱللَّـهُ لَآ إِلَـٰهَ إِلَّا هُوَ</h1></ion-col>
+          <ion-col text-right><h3>2,4,5</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>لَآ إِلَـٰهَ إِلَّا ٱللهُ</h1></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>آ إِلَـٰهَ إِلَّآ أَنَا۠ فَٱتَّقُونِ</h1></ion-col>
+        </ion-row>
+
+        <br>
+        <h2>13. Mad Tabri'ah</h2>
+        <hr>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h2 class="biru">Asas</h2></ion-col>
+          <ion-col text-right col-9><h3><p>Mad pada perkataan لَآ  bererti "tidak" yang berfungsi "Penafian bagi jenis"</p></h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding>
+          <ion-col text-left><h3 class="biru">Contoh</h3></ion-col>
+          <ion-col text-right><h2 class="biru">Bil. Haroakat</h2></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left col-11><h1>فَلَانَاصِرَلَهُمْ</h1></ion-col>
+          <ion-col text-right><h3>2</h3></ion-col>
+        </ion-row>
+        <ion-row no-margin no-padding class="hnobreak">
+          <ion-col text-left><h1>وَٱلسَّاعَةُ لَا رَيْبَ فِيهَا</h1></ion-col>
+        </ion-row>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

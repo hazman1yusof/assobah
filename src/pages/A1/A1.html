@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar no-border-bottom color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu">
+      </ion-icon>
+    </button>
+
+  <ion-title>A1. Sebutan dan Kaedahnya</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon item-left color='primary' class="huruf">{{item.huruf}}</ion-icon>
+      <ion-icon name="warning" color='danger' *ngIf=item.istilak class='small'></ion-icon>
+      <ion-icon name="medical"  *ngIf=item.xdemalay class='orange'></ion-icon>
+
+      <div item-right [innerHTML]=item.sebutan></div>
+      <div item-right class='number'>{{item.no}}</div>
+    </button>
+  </ion-list>
+</ion-content>

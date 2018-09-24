@@ -1,0 +1,23 @@
+page-note {
+	.number{
+		font-size:small;
+		color:#999;
+	}
+	.toolbar-title {
+	   text-overflow: unset;
+	   white-space: unset;
+	}
+	.biru{
+		color: rgb(66, 127, 235) !important;
+	}
+	.d{
+		color:orange !important;
+	}
+	h1,h3{
+		display:inline !important;
+	}
+	p{
+		white-space: pre-wrap;
+	}
+
+}
